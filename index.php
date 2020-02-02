@@ -8,20 +8,22 @@
 <h1>Ryan's POS System</h1>
 
 <form action="/submit.php" method="post">
+
 <?php $ledger = array() ?>
+
 <table>
     <tr> 
     <td></td>
     </tr>
     <tr>
-    <td colspan="3"><input type="text" id=ledger readonly/></td>
+    <td colspan="3"><input type="text" id=ledger name="ledger" readonly /></td>
     <td>
-        <input type="submit" value="Save Till" onclick=""/>
+        <input type="submit" value="Save Till" />
         <input type="button" value="Clear" onclick="document.getElementById('ledger').value = '' " />
     </td>
     </tr>
     <tr>
-    <td colspan="3"><input type="text" id="number"/></td>
+    <td colspan="3"><input type="text" id="number" /></td>
     <td>
         <input type="button" value="Add Amount" onclick="createamount(newamount)" />
         <input type="button" value="Clear" onclick="document.getElementById('number').value = '' " />
