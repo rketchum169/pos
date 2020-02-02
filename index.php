@@ -7,37 +7,46 @@
 <body>
 <h1>Ryan's POS System</h1>
 
-<form action ="/submit.php">
+<form action="/submit.php">
 
-<table style="width:100%">
+<table>
     <tr>
-    <th align="left" colspan="3" class="ledger"><input type="number"></th>
+    <td></td>
+    </tr>
     <tr>
-    <td><a href="#" class="number">7</td>
-    <td><a href="#" class="number">8</td>
-    <td><a href="#" class="number">9</td>
+    <td colspan="3"><input type="text" id="number"/></td>
+    <td><input type="submit" value="Save Till" onclick=""/></td>
+    </tr>
+    <tr>
+    <td colspan="3"><input type="text" id="number"/></td>
+    <td><input type="button" value="Add Amount" onclick=""/></td>
     </tr>
 
     <tr>
-    <td><a href="#" class="number">4</td>
-    <td><a href="#" class="number">5</td>
-    <td><a href="#" class="number">6</td>
+    <td><input type="button" value="7" /></td>
+    <td><input type="button" value="8" /></td>
+    <td><input type="button" value="7" /></td>
     </tr>
 
     <tr>
-    <td><a href="#" class="number">1</td>
-    <td><a href="#" class="number">2</td>
-    <td><a href="#" class="number">3</td>
+    <td><input type="button" value="4" /></td>
+    <td><input type="button" value="5" /></td>
+    <td><input type="button" value="6" /></td>
     </tr>
 
     <tr>
-    <td><a href="#" class="number">0</td>
-    <td colspan="2"><a href="#" class="create">Create Amount</td>
+    <td><input type="button" value="1" /></td>
+    <td><input type="button" value="2" /></td>
+    <td><input type="button" value="3" /></td>
     </tr>
 
     <tr>
-    <td colspan="3"><input type="submit" value="SAVE TILL"></td>
+    <td colspan="2"><input type="button" value="0" /></td>
+    <td><input type="button" value="." /></td>
     </tr>
+ </table>
+
+ </form>
 
 <script src="./app.js"></script>
 
