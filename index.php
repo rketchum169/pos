@@ -50,8 +50,8 @@
     </tr>
 
     <tr>
-    <td colspan="2"><input type="button" value="0" onclick="insert('0')" class="button" /></td>
-    <td><input type="button" value="." onclick="insert('.')" id="0" class="button" /></td>
+    <td colspan="2"><input type="button" value="0" id="zero" onclick="insert('0')" class="button" /></td>
+    <td><input type="button" value="." onclick="insert('.')" class="button" /></td>
     </tr>
  </table>
 
