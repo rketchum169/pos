@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="app.css">
 <title>POS</title>
 </head>
 
@@ -18,14 +19,14 @@
     <tr>
     <td colspan="3"><input type="text" id=ledger name="ledger" readonly /></td>
     <td>
-        <input type="submit" value="Save Till" />
+        <input type="submit" value="Save Till" class = "button2" />
         <input type="button" value="Clear" onclick="document.getElementById('ledger').value = '' " />
     </td>
     </tr>
     <tr>
-    <td colspan="3"><input type="text" id="number" /></td>
+    <td colspan="3"><input type="text" id="number" name="number"/></td>
     <td>
-        <input type="button" value="Add Amount" onclick="createamount(newamount)" />
+        <input type="button" value="Add Amount" class="button2" onclick="createamount(newamount)" />
         <input type="button" value="Clear" onclick="document.getElementById('number').value = '' " />
     </td>
     </tr>
@@ -50,7 +51,7 @@
 
     <tr>
     <td colspan="2"><input type="button" value="0" onclick="insert('0')" class="button" /></td>
-    <td><input type="button" value="." onclick="insert('.')" class="button" /></td>
+    <td><input type="button" value="." onclick="insert('.')" id="0" class="button" /></td>
     </tr>
  </table>
 

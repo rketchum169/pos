@@ -4,6 +4,6 @@ function insert(val) {
 }
 
 function createamount(val) {
-       document.getElementById("ledger").value+=val
-}
+       amount = document.getElementById("ledger").value+=val + ","
 
+}
